@@ -1,3 +1,6 @@
+name: Custom Issue Template
+description: Provide details about your submission
+
 body:
   - type: input
     id: repo-link-1
