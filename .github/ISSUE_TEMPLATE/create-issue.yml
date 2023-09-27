@@ -2,6 +2,71 @@ name: Custom Issue Template
 description: Provide details about your submission
 
 body:
+      
+  - type: dropdown
+    id: team-name
+    attributes:
+      label: Name of the Team
+      description: Select the name of your team from the dropdown.
+      options:
+        - Team 1
+        - Team 2
+        - Team 3
+        - Team 4
+        - Team 5
+        - Team 6
+        - Team 7
+        - Team 8
+        - Team 9
+        - Team 10
+        - Team 11
+        - Team 12
+        - Team 13
+        # Add more team names as needed
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic-name
+    attributes:
+      label: Name of the Topic
+      description: Select the name of your Topic from the dropdown.
+      options:
+        - ResumeVault
+        - TimeKeeper
+        - ContractHub
+        - CretifyMe
+        - Others
+        # Add more team names as needed
+    validations:
+      required: true
+
+  - type: input
+    id: other-team-name
+    attributes:
+      label: If "Other", please specify the team name
+      placeholder: "Enter team name here"
+    validations:
+      required: false
+
+   - type: input
+    id: website-link
+    attributes:
+      label: Website link
+      description: Provide the link to your project.
+      placeholder: "www.example.com"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of your submission.
+      placeholder: "Describe your project here..."
+    validations:
+      required: true
+
   - type: input
     id: repo-link-1
     attributes:
@@ -47,29 +112,3 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: Provide a detailed description of your submission.
-      placeholder: "Describe your project here..."
-    validations:
-      required: true
-
-  - type: textarea
-    id: team-name
-    attributes:
-      label: Name of the Team
-      description: Provide the name of your team.
-      placeholder: "Team XYZ"
-    validations:
-      required: true
-
-  - type: input
-    id: topic-chosen
-    attributes:
-      label: Topic Chosen
-      description: Provide the topic you've chosen for your submission.
-      placeholder: "Topic Name"
-    validations:
-      required: true
