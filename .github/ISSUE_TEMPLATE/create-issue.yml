@@ -49,7 +49,7 @@ body:
     validations:
       required: false
 
-   - type: input
+  - type: input
     id: website-link
     attributes:
       label: Website link
