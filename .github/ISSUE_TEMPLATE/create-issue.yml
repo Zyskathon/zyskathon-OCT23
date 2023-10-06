@@ -65,7 +65,7 @@ body:
       description: Provide a detailed description of your submission.
       placeholder: "Describe your project here..."
     validations:
-      required: true
+      required: false
 
   - type: input
     id: repo-link-1
